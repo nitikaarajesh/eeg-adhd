@@ -74,7 +74,7 @@ Each `.mat` file holds one participant as a `samples × 19` array in microvolts.
   95–99% and only slightly lower without the artifact-prone channels.
 
 - **SHAP's blind spot.** The SHAP feature rankings of the leaky and the honest model are
-  **nearly identical (Spearman ρ = [0.975])
+  **nearly identical (Spearman ρ = 0.975)** — SHAP cannot see the leak. Permutation
   importance tells a different story: the leaky model's predictions depend on its features
   **3.5 ± 0.8× more** than the honest model's (mean over 5 seeds). Attribution similarity
   does not imply the models are doing the same thing.
